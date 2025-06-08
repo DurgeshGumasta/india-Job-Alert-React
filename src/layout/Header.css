@@ -1,0 +1,75 @@
+/* Reset basics */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Header Container */
+.header {
+  background: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Logo + Title */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  height: 80px;
+}
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a56db;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #1a56db;
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+}
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+.sign-in {
+  background: transparent;
+  color: #000;
+}
+.sign-up {
+  background: #1a56db;
+  color: white;
+}
+.sign-up:hover {
+  background: #143d8b;
+}

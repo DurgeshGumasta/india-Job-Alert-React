@@ -1,0 +1,17 @@
+
+@import "tailwindcss";
+
+:root {
+ margin: 0;
+ padding: 0;
+ background-color: white;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color:white;
+  }
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Alert Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow fixed w-full top-0 z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Job Alert</h1>
+      <div class="w-1/3">
+        <input type="text" placeholder="Search jobs..." class="w-full p-2 border rounded">
+      </div>
+      <nav class="hidden md:flex space-x-4">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <a href="/categories" class="text-blue-600 hover:underline">Categories</a>
+        <a href="/subscribe" class="text-blue-600 hover:underline">Subscribe</a>
+        <a href="/contact" class="text-blue-600 hover:underline">Contact</a>
+      </nav>
+      <button class="md:hidden">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16 flex flex-col md:flex-row gap-6">
+    <!-- Job Listings -->
+    <section class="md:w-3/4">
+      <h2 class="text-2xl font-bold mb-4">Latest Job Alerts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Job Card -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg">
+          <h3 class="text-lg font-semibold">SSC CGL 2025</h3>
+          <p class="text-sm text-gray-600">Posted: June 1, 2025</p>
+          <p class="text-gray-700 mt-2">Staff Selection Commission Combined Graduate Level Exam...</p>
+          <div class="mt-4 flex space-x-2">
+            <a href="/job/1" class="bg-blue-600 text-white px-4 py-2 rounded">View Details</a>
+            <a href="#" class="bg-green-600 text-white px-4 py-2 rounded">Apply Now</a>
+          </div>
+        </div>
+        <!-- Repeat Job Cards -->
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="md:w-1/4">
+      <h2 class="text-xl font-bold mb-4">Categories</h2>
+      <ul class="space-y-2">
+        <li><a href="/category/latest-jobs" class="text-blue-600 hover:underline">Latest Jobs</a></li>
+        <li><a href="/category/results" class="text-blue-600 hover:underline">Results</a></li>
+        <li><a href="/category/admit-cards" class="text-blue-600 hover:underline">Admit Cards</a></li>
+        <li><a href="/category/syllabus" class="text-blue-600 hover:underline">Syllabus</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Job Alert. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="/about" class="text-blue-600 hover:underline">About</a>
+        <a href="/privacy" class="text-blue-600 hover:underline">Privacy Policy</a>
+        <a href="/contact" class="text-blue-600 hover:underline">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* global.css */
+.global-container {
+  margin-left: 156px;
+  margin-right: 156px;
+}
+
+/* Optional: make it responsive */
+@media (max-width: 768px) {
+  .global-container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
