@@ -19,7 +19,9 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo-container">
         <Link to="/" className="logo-link">
-          <img src="/src/assets/logo1.png" alt="RojGaar Suchna Logo" className="logo" />
+            <i className="fas fa-briefcase custom-briefcase-icon" style={{ fontSize: '2rem', color: '#4ade80' }}></i>
+
+          {/* <img src="/src/assets/logo1.png" alt="RojGaar Suchna Logo" className="logo" /> */}
           <span className="site-name">रोजगार सूचना</span>
           {/* रोजगार सूचना */}
         </Link>
